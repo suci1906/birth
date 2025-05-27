@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+  color: #ff4d4d;
+  text-shadow: 2px 2px 5px #fff;
+  font-size: 3em;
+  border: 3px dashed #fff;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 15px;
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
